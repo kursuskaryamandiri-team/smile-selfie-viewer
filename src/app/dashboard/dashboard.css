@@ -66,6 +66,16 @@
   margin-bottom: 1.5rem;
 }
 
+.preview-label {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, hsl(220, 80%, 70%), hsl(270, 70%, 70%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .preview-container {
   width: 100%;
   aspect-ratio: 16/9;

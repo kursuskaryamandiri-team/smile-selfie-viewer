@@ -145,6 +145,9 @@ export default function Dashboard() {
       </header>
 
       <section className="preview-section">
+        {activePerson && (
+          <div className="preview-label">{activePerson.name}</div>
+        )}
         <div className="preview-container">
           {activePerson ? (
             <div className="preview-overflow">
