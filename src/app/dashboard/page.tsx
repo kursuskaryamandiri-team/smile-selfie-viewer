@@ -146,12 +146,15 @@ export default function Dashboard() {
 
       <section className="preview-section">
         {activePerson && (
-          <div className="preview-label">{activePerson.name}</div>
+          <div className="preview-label">
+            {/^\d{3}$/.test(activePerson.id) ? `${activePerson.id} ${activePerson.name}` : activePerson.name}
+          </div>
         )}
         <div className="preview-container">
           {activePerson ? (
             <div className="preview-overflow">
               <img 
+                key={activePerson.photoUrl}
                 src={activePerson.photoUrl} 
                 alt="Preview" 
                 style={{ filter: filterStyle, transform: transformStyle }}
